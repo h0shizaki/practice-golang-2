@@ -24,6 +24,15 @@ func main() {
 		fmt.Println("Error while fectching data")
 	}
 
+	//POST
+	// stmt, err := db.Prepare("INSERT INTO user (f_name,l_name) VALUES(?,?)")
+	// stmt.Exec("Yuuki", "Tachibana")
+
+	// if err != nil {
+	// 	fmt.Println("Error :", err)
+	// }
+
+	//GET all
 	for results.Next() {
 		var (
 			id     int
